@@ -1,0 +1,72 @@
+.contact-section {
+  padding-top: 64px;
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  border: 1px solid #b4baca;
+  padding: 39px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-image: url(../img/contact/contact-img-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding: 101px 39px;
+    background-image: url(../img/contact/contact-img-desk.png);
+    max-width: 1312px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #f2e8d4;
+  max-width: 263px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: max-content;
+  }
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
+  word-break: break-all;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
