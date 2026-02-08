@@ -1,5 +1,6 @@
 .header {
-  background: #325853;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -40,19 +41,19 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
   }
 }
 
 .nav-list-link {
   padding: 4px 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
-  color: rgba(245, 236, 236, 0.5);
+  color: #212222;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,6 @@
   &:focus,
   &:active,
   &.active {
-    color: #f5ecec;
   }
 }
 

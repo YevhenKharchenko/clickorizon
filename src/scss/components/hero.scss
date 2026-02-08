@@ -4,8 +4,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 541px;
-  padding-bottom: 32px;
+  padding-top: 365px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -15,11 +15,10 @@
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 302px;
-    padding-bottom: 40px;
+    padding-top: 520px;
+    padding-bottom: 64px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
-    position: relative;
   }
 }
 
@@ -30,85 +29,81 @@
 
 .hero-content-wrapper {
   @include media(desktop) {
-    max-width: 528px;
-    margin-left: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+.hero-text-wrapper {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    max-width: 640px;
+    margin-bottom: 0;
   }
 }
 
 .hero-main-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   font-size: 42px;
-  line-height: 1;
-  color: #f2e8d4;
-  margin-bottom: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 8px;
 
   @include media(desktop) {
-    font-size: 62px;
-    margin-bottom: 40px;
+    font-size: 92px;
   }
 }
 
 .hero-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
-  letter-spacing: -0.02em;
-  color: #f5ecec;
+  color: #dfdfdf;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-.hero-top-text {
-  margin-bottom: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.hero-top-bottom-text {
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    margin-bottom: 189px;
-  }
-}
-
-.hero-bottom-text-wrapper {
-  max-width: 204px;
-  margin-left: auto;
+.hero-bottom-wrapper {
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #c8c8c8;
+  border-radius: 30px;
+  padding: 19px 23px;
+  max-width: 280px;
 
   @include media(desktop) {
   }
 }
 
 .hero-bottom-text {
-  @include media(desktop) {
-  }
-}
-
-.hero-bottom-top-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.4;
-  letter-spacing: -0.02em;
-  color: #b7987b;
+  color: #dfdfdf;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 16px;
   }
 }
 
-.hero-bottom-bottom-text {
-  font-family: 'Poppins', sans-serif;
+.hero-bottom-span {
+  background: #fff;
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.2;
-  color: rgba(245, 236, 236, 0.5);
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6d6a63;
+  max-width: max-content;
 
   @include media(desktop) {
   }
