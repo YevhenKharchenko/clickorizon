@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickorizon</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://clickorizon.com" />
+    <link rel="icon" type="image/png" href="/clickorizon/favicon.png" />
+    
+    <script type="module" crossorigin src="/clickorizon/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/clickorizon/assets/header-9cb9b19e.js">
+    <link rel="modulepreload" crossorigin href="/clickorizon/assets/vendor-5ebdfd98.js">
+    <link rel="stylesheet" href="/clickorizon/assets/header-61fe7e7e.css">
+    <link rel="stylesheet" href="/clickorizon/assets/vendor-d9eb7f85.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="40"
+          height="40"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#play">How to Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#uniqueness">Uniqueness</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features"
+            >Players enjoy</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#advantages">Why us</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/clickorizon/assets/sprite-305c4364.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/clickorizon/assets/sprite-305c4364.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about">About</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#play">How to Play</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#uniqueness"
+          >Uniqueness</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#features"
+          >Players enjoy</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQ</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#advantages">Why us</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-main-title">Click Horizon</h1>
+          <p class="hero-text">
+            Click Horizon is what you get when someone takes the most brain-dead
+            thing imaginable - clicking - and actually makes it enjoyable
+            somehow. Sounds simple? It is, and that's the beauty of it. Click,
+            unlock upgrades, expand your world, and watch progress unfold step
+            by step.
+          </p>
+        </div>
+        <div class="hero-bottom-wrapper">
+          <p class="hero-bottom-text">
+            Clicking may sound boring, but it’s oddly satisfying to watch your
+            tiny world grow with each tap.
+          </p>
+          <p class="hero-bottom-span">#ClickMagic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="container about-container">
+    <div class="about-top-wrapper">
+      <picture>
+        <source
+          srcset="/clickorizon/assets/about-img1-desk-1bf7dc04.png "
+          media="(min-width: 1440px)"
+          width="416"
+          height="294" />
+        <source
+          srcset="/clickorizon/assets/about-img1-mob-26db54b5.png "
+          width="343"
+          height="242" />
+        <img
+          class="about-img1"
+          src="/clickorizon/assets/about-img1-mob-26db54b5.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="242"
+          loading="lazy"
+      /></picture>
+      <div class="about-top-text-wrapper">
+        <h2 class="section-title about-title">Game Overview</h2>
+        <p class="about-top-text">
+          Real talk? We built this because we're sick of every game being this
+          crazy competitive mess. Take your sweet time - there's no timer
+          breathing down your neck.
+        </p>
+      </div>
+    </div>
+    <div class="about-bottom-wrapper">
+      <img
+        class="about-img2"
+        src="/clickorizon/assets/about-img2-mob-b834059f.png"
+        alt="Screenshot of the game"
+        width="304"
+        height="213"
+        loading="lazy"
+      />
+      <picture>
+        <source
+          srcset="/clickorizon/assets/about-img3-desk-eaee0fc4.png "
+          media="(min-width: 1440px)"
+          width="416"
+          height="294" />
+        <source
+          srcset="/clickorizon/assets/about-img3-mob-d0215809.png "
+          width="343"
+          height="243" />
+        <img
+          class="about-img3"
+          src="/clickorizon/assets/about-img3-mob-d0215809.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="243"
+          loading="lazy"
+      /></picture>
+      <div class="about-bottom-text-wrapper">
+        <p class="about-bottom-text">
+          You'll expand your world just by clicking around, earning points, and
+          stumbling across new features as you go.
+        </p>
+        <p class="about-bottom-text">
+          It's all about taking your time and exploring - no rush, no stress.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section play-section" id="play">
+  <div class="play-bg-wrapper">
+    <div class="container play-container">
+      <div class="play-content-wrapper">
+        <div class="play-text-wrapper">
+          <h2 class="section-title play-title">How to Play</h2>
+          <p class="play-text">
+            Just saying - I've lost entire evenings to this thing. One minute
+            you're testing it out, next thing you know it's 2 AM.
+          </p>
+        </div>
+        <ul class="play-list">
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="/clickorizon/assets/sprite-305c4364.svg#icon-play1"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Generate Energy</h3>
+            <p class="play-item-text">
+              Click to produce energy and fuel your world’s growth.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="/clickorizon/assets/sprite-305c4364.svg#icon-play2"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Upgrade & Expand</h3>
+            <p class="play-item-text">
+              Spend energy on upgrades to unlock new zones and mechanics.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="/clickorizon/assets/sprite-305c4364.svg#icon-play3"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Automate Progress</h3>
+            <p class="play-item-text">
+              Set up systems to gather rewards over time automatically.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="/clickorizon/assets/sprite-305c4364.svg#icon-play4"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Explore & Collect</h3>
+            <p class="play-item-text">
+              Return anytime to collect accumulated rewards and see your world
+              evolve.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <picture>
+        <source
+          srcset="/clickorizon/assets/play-img-desk-8f4688cc.png "
+          media="(min-width: 1440px)"
+          width="528"
+          height="365" />
+        <source srcset="/clickorizon/assets/play-img-mob-643d9a0f.png " width="343" height="259" />
+        <img
+          class="play-img"
+          src="/clickorizon/assets/play-img-mob-643d9a0f.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="259"
+          loading="lazy"
+      /></picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section uniqueness-section" id="uniqueness">
+  <div class="container uniqueness-container">
+    <h2 class="section-title uniqueness-title">Uniqueness</h2>
+    <div class="uniqueness-content-wrapper">
+      <p class="uniqueness-top-text">
+        The upgrades actually change how the game feels, not like those lazy '+1
+        damage' upgrades that literally every other clicker just throws at you.
+      </p>
+      <div class="uniqueness-text-wrapper">
+        <p class="uniqueness-middle-text">
+          Instead of static screens, the visual horizon keeps expanding as you
+          play. New areas and mechanics unlock naturally, so progress is
+          something you actually see, not just a number going up.
+        </p>
+        <p class="uniqueness-bottom-text">
+          Progress continues while you’re away, and when you return, it’s
+          immediately clear how far you’ve come and what changed during your
+          absence.
+        </p>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/clickorizon/assets/uniqueness-img-desk-3c60b3c8.png "
+        media="(min-width: 1440px)"
+        width="1286"
+        height="89" />
+      <source
+        srcset="/clickorizon/assets/uniqueness-img-mob-458fed04.png "
+        width="343"
+        height="55" />
+      <img
+        class="uniqueness-img"
+        src="/clickorizon/assets/uniqueness-img-mob-458fed04.png"
+        alt="Screenshot of the game"
+        width="343"
+        height="55"
+        loading="lazy"
+    /></picture>
+  </div>
+</section>
+
+      <section class="section features-section" id="features">
+  <div class="container features-container">
+    <h2 class="section-title features-title">Players enjoy</h2>
+    <p class="features-text">
+      Great for those times when you wanna turn your brain off but still feel
+      like you're doing something, if that makes sense.
+    </p>
+    <ul class="features-list">
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/clickorizon/assets/features-img1-desk-c5bfca73.png "
+            media="(min-width: 1440px)"
+            width="416"
+            height="294" />
+          <source
+            srcset="/clickorizon/assets/features-img1-mob-f0f4c799.png "
+            width="343"
+            height="294" />
+          <img
+            class="features-img"
+            src="/clickorizon/assets/features-img1-mob-f0f4c799.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="294"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/clickorizon/assets/features-img2-desk-5f9f6813.png "
+            media="(min-width: 1440px)"
+            width="416"
+            height="294" />
+          <source
+            srcset="/clickorizon/assets/features-img2-mob-c99f58ec.png "
+            width="343"
+            height="294" />
+          <img
+            class="features-img"
+            src="/clickorizon/assets/features-img2-mob-c99f58ec.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="294"
+            loading="lazy"
+        /></picture>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/clickorizon/assets/features-img3-desk-fb3807bc.png "
+            media="(min-width: 1440px)"
+            width="416"
+            height="294" />
+          <source
+            srcset="/clickorizon/assets/features-img3-mob-cafb596a.png "
+            width="343"
+            height="294" />
+          <img
+            class="features-img"
+            src="/clickorizon/assets/features-img3-mob-cafb596a.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="294"
+            loading="lazy"
+        /></picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <h2 class="section-title gallery-title">Gallery</h2>
+      <p class="gallery-text">
+        We kept the visuals super clean because honestly, who needs more visual
+        chaos in their life?
+      </p>
+      <div class="gallery-swiper-container">
+        <ul class="swiper-wrapper gallery-swiper-wrapper">
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/clickorizon/assets/gallery-img1-desk-40dd8b12.png "
+                media="(min-width: 1440px)"
+                width="355"
+                height="629" />
+              <source
+                srcset="/clickorizon/assets/gallery-img1-mob-19c1119a.png "
+                width="343"
+                height="629" />
+              <img
+                class="gallery-img"
+                src="/clickorizon/assets/gallery-img1-mob-19c1119a.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="629"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/clickorizon/assets/gallery-img2-desk-ae2a2cea.png "
+                media="(min-width: 1440px)"
+                width="239"
+                height="629" />
+              <source
+                srcset="/clickorizon/assets/gallery-img2-mob-b4e6804a.png "
+                width="343"
+                height="629" />
+              <img
+                class="gallery-img"
+                src="/clickorizon/assets/gallery-img2-mob-b4e6804a.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="629"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/clickorizon/assets/gallery-img3-desk-bbc84fb0.png "
+                media="(min-width: 1440px)"
+                width="239"
+                height="629" />
+              <source
+                srcset="/clickorizon/assets/gallery-img3-mob-73cce46b.png "
+                width="343"
+                height="629" />
+              <img
+                class="gallery-img"
+                src="/clickorizon/assets/gallery-img3-mob-73cce46b.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="629"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/clickorizon/assets/gallery-img4-desk-5285ed9a.png "
+                media="(min-width: 1440px)"
+                width="239"
+                height="629" />
+              <source
+                srcset="/clickorizon/assets/gallery-img4-mob-e0bffe08.png "
+                width="343"
+                height="629" />
+              <img
+                class="gallery-img"
+                src="/clickorizon/assets/gallery-img4-mob-e0bffe08.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="629"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <picture>
+              <source
+                srcset="/clickorizon/assets/gallery-img5-desk-11206508.png "
+                media="(min-width: 1440px)"
+                width="239"
+                height="629" />
+              <source
+                srcset="/clickorizon/assets/gallery-img5-mob-dd89dd52.png "
+                width="343"
+                height="629" />
+              <img
+                class="gallery-img"
+                src="/clickorizon/assets/gallery-img5-mob-dd89dd52.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="629"
+                loading="lazy"
+            /></picture>
+          </li>
+        </ul>
+      </div>
+      <div class="controls gallery-controls">
+        <button
+          class="arrow-btn"
+          id="galleryLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="arrow-btn"
+          id="galleryRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <h2 class="section-title faq-title">FAQ</h2>
+    <p class="faq-subtitle">Common Questions</p>
+    <ul class="faq-list">
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Is Click Horizon easy to play?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-down"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Yes, the mechanics are simple and beginner-friendly.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Does the game support idle progress?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-down"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Yes, rewards continue accumulating while away.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Is there a time limit?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-down"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          No, the game has no timers or pressure mechanics.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text">Can I reset progress?</span>
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-down"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Yes, progression resets unlock long-term bonuses.
+        </p>
+      </li>
+      <li class="faq-list-item">
+        <button class="faq-top-text-btn">
+          <span class="faq-btn-text"
+            >Is the game suitable for casual players?</span
+          >
+          <span class="faq-toggle-symbol"
+            ><svg class="faq-icon" width="24" height="24">
+              <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow-down"></use></svg
+          ></span>
+        </button>
+        <p class="faq-bottom-text">
+          Absolutely, it’s designed for relaxed gameplay.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section advantages-section" id="advantages">
+  <div class="advantages-bg-wrapper">
+    <div class="container advantages-container">
+      <h2 class="section-title advantages-title">Why Click Horizon</h2>
+      <p class="advantages-text">
+        Click Horizon is made for players who enjoy gentle progression without
+        competition or pressure. It offers clear goals, a satisfying sense of
+        long-term growth.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="container contact-container">
+    <div class="contact-content-wrapper">
+      <picture>
+        <source
+          srcset="/clickorizon/assets/contact-img-desk-2026b6cd.png "
+          media="(min-width: 1440px)"
+          width="1314"
+          height="256" />
+        <source
+          srcset="/clickorizon/assets/contact-img-mob-0c1e4c55.png "
+          width="343"
+          height="67" />
+        <img
+          class="contact-img"
+          src="/clickorizon/assets/contact-img-mob-0c1e4c55.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="67"
+          loading="lazy"
+      /></picture>
+      <a href="mailto:info@clickorizon.com" class="contact-link">
+        <span class="contact-btn-span">info@clickorizon.com</span>
+        <svg class="contact-icon" width="24" height="24">
+          <use href="/clickorizon/assets/sprite-305c4364.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 clickorizon.com — All rights reserved.</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
