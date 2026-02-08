@@ -1,9 +1,29 @@
 <section class="section contact-section" id="contact">
   <div class="container contact-container">
     <div class="contact-content-wrapper">
-      <p class="contact-subtitle">Feedback or support requests:</p>
-      <a href="mailto:info@playzonica.com" class="contact-link">
-        <span class="contact-btn-span">info@playzonica.com</span>
+      <picture>
+        <source
+          srcset="./img/contact/contact-img-desk.png"
+          media="(min-width: 1440px)"
+          width="1314"
+          height="256" />
+        <source
+          srcset="./img/contact/contact-img-mob.png"
+          width="343"
+          height="67" />
+        <img
+          class="contact-img"
+          src="./img/contact/contact-img-mob.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="67"
+          loading="lazy"
+      /></picture>
+      <a href="mailto:info@clickorizon.com" class="contact-link">
+        <span class="contact-btn-span">info@clickorizon.com</span>
+        <svg class="contact-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-arrow"></use>
+        </svg>
       </a>
     </div>
   </div>

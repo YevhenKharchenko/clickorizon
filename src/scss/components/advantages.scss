@@ -1,21 +1,24 @@
 .advantages-section {
-  padding-top: 64px;
-  padding-bottom: 64px;
-
   @include media(desktop) {
-    padding-top: 227px;
-    padding-bottom: 80px;
   }
 }
 
 .advantages-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  background-image: url(../img/advantages/advantages-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 104px;
     max-width: 1440px;
+    background-image: url(../img/advantages/advantages-bg-desk.jpg);
   }
 }
 
@@ -24,55 +27,25 @@
   }
 }
 
-.advantages-content-wrapper {
-  background: #772e3e;
-  border-radius: 60px;
-  padding: 40px 16px;
-  min-height: 540px;
-
-  @include media(desktop) {
-    padding: 64px 56px;
-    min-height: 335px;
-  }
-}
-
 .advantages-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.4;
-  color: #fff;
-  margin-bottom: 24px;
+  text-align: center;
 
   @include media(desktop) {
-    font-size: 52px;
   }
 }
 
 .advantages-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 1.4;
-  letter-spacing: -0.02em;
-  color: #ece7c5;
+  text-align: center;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 16px;
-    max-width: 532px;
-  }
-}
-
-.advantages-img {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @include media(desktop) {
-    bottom: 0;
-    right: 80px;
-    left: auto;
-    transform: none;
+    font-size: 28px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

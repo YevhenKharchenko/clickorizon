@@ -1,34 +1,69 @@
 <section class="section about-section" id="about">
   <div class="container about-container">
-    <div class="section-title-wrapper about-title-wrapper">
-      <svg class="line-icon" width="196" height="32">
-        <use href="./img/sprite.svg#icon-line"></use>
-      </svg>
-      <h2 class="section-title about-title">What’s the Game</h2>
+    <div class="about-top-wrapper">
+      <picture>
+        <source
+          srcset="./img/about/about-img1-desk.png"
+          media="(min-width: 1440px)"
+          width="416"
+          height="294" />
+        <source
+          srcset="./img/about/about-img1-mob.png"
+          width="343"
+          height="242" />
+        <img
+          class="about-img1"
+          src="./img/about/about-img1-mob.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="242"
+          loading="lazy"
+      /></picture>
+      <div class="about-top-text-wrapper">
+        <h2 class="section-title about-title">Game Overview</h2>
+        <p class="about-top-text">
+          Real talk? We built this because we're sick of every game being this
+          crazy competitive mess. Take your sweet time - there's no timer
+          breathing down your neck.
+        </p>
+      </div>
     </div>
-    <p class="about-top-text">
-      The game is built around a simple but engaging mechanic:
-    </p>
-    <p class="about-subtitle">spin to decide your next move</p>
-    <p class="about-text">
-      Each spin unlocks paths, bonuses, or obstacles. Players choose how to
-      continue their journey and which rewards to pursue. Honestly, I've been
-      testing this for weeks and I'm still finding new combinations.
-    </p>
-    <picture>
-      <source
-        srcset="./img/about/about-img-desk.png"
-        media="(min-width: 1440px)"
-        width="864"
-        height="484" />
-      <source srcset="./img/about/about-img-mob.png" width="343" height="192" />
+    <div class="about-bottom-wrapper">
       <img
-        class="about-img"
-        src="./img/about/about-img-mob.png"
+        class="about-img2"
+        src="./img/about/about-img2-mob.png"
         alt="Screenshot of the game"
-        width="343"
-        height="192"
+        width="304"
+        height="213"
         loading="lazy"
-    /></picture>
+      />
+      <picture>
+        <source
+          srcset="./img/about/about-img3-desk.png"
+          media="(min-width: 1440px)"
+          width="416"
+          height="294" />
+        <source
+          srcset="./img/about/about-img3-mob.png"
+          width="343"
+          height="243" />
+        <img
+          class="about-img3"
+          src="./img/about/about-img3-mob.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="243"
+          loading="lazy"
+      /></picture>
+      <div class="about-bottom-text-wrapper">
+        <p class="about-bottom-text">
+          You'll expand your world just by clicking around, earning points, and
+          stumbling across new features as you go.
+        </p>
+        <p class="about-bottom-text">
+          It's all about taking your time and exploring - no rush, no stress.
+        </p>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,72 +1,77 @@
 <section class="section play-section" id="play">
   <div class="play-bg-wrapper">
     <div class="container play-container">
-      <div class="play-top-wrapper">
-        <p class="play-top-left-text">A living world</p>
-        <p class="play-top-right-text">Designed to breathe</p>
+      <div class="play-content-wrapper">
+        <div class="play-text-wrapper">
+          <h2 class="section-title play-title">How to Play</h2>
+          <p class="play-text">
+            Just saying - I've lost entire evenings to this thing. One minute
+            you're testing it out, next thing you know it's 2 AM.
+          </p>
+        </div>
+        <ul class="play-list">
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-play1"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Generate Energy</h3>
+            <p class="play-item-text">
+              Click to produce energy and fuel your world’s growth.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-play2"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Upgrade & Expand</h3>
+            <p class="play-item-text">
+              Spend energy on upgrades to unlock new zones and mechanics.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-play3"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Automate Progress</h3>
+            <p class="play-item-text">
+              Set up systems to gather rewards over time automatically.
+            </p>
+          </li>
+          <li class="play-list-item">
+            <div class="play-icon-wrapper">
+              <svg class="play-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-play4"></use>
+              </svg>
+            </div>
+            <h3 class="play-item-title">Explore & Collect</h3>
+            <p class="play-item-text">
+              Return anytime to collect accumulated rewards and see your world
+              evolve.
+            </p>
+          </li>
+        </ul>
       </div>
-      <div class="section-title-wrapper play-title-wrapper">
-        <svg class="line-icon" width="196" height="32">
-          <use href="./img/sprite.svg#icon-line-light"></use>
-        </svg>
-        <h2 class="section-title play-title">How to Play</h2>
-      </div>
-      <p class="play-text">
-        It's quick to pick up and perfect when you've got like 10 minutes to
-        kill.
-      </p>
-      <ul class="play-list">
-        <li class="play-list-item">
-          <img
-            class="play-img"
-            src="./img/play/play-img1.png"
-            alt="Screenshot of the game"
-            width="256"
-            height="256"
-            loading="lazy"
-          />
-        </li>
-        <li class="play-list-item">
-          <img
-            class="play-img"
-            src="./img/play/play-img2.png"
-            alt="Screenshot of the game"
-            width="256"
-            height="256"
-            loading="lazy"
-          />
-        </li>
-        <li class="play-list-item">
-          <img
-            class="play-img"
-            src="./img/play/play-img3.png"
-            alt="Screenshot of the game"
-            width="256"
-            height="256"
-            loading="lazy"
-          />
-        </li>
-        <li class="play-list-item">
-          <img
-            class="play-img"
-            src="./img/play/play-img4.png"
-            alt="Screenshot of the game"
-            width="256"
-            height="256"
-            loading="lazy"
-          />
-        </li>
-        <li class="play-list-item">
-          <img
-            class="play-img"
-            src="./img/play/play-img5.png"
-            alt="Screenshot of the game"
-            width="256"
-            height="256"
-            loading="lazy"
-          />
-        </li>
-      </ul>
+      <picture>
+        <source
+          srcset="./img/play/play-img-desk.png"
+          media="(min-width: 1440px)"
+          width="528"
+          height="365" />
+        <source srcset="./img/play/play-img-mob.png" width="343" height="259" />
+        <img
+          class="play-img"
+          src="./img/play/play-img-mob.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="259"
+          loading="lazy"
+      /></picture>
     </div>
   </div>
 </section>

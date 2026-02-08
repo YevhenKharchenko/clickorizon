@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://playzonica.com/sitemap.xml
+Sitemap: https://clickorizon.com/sitemap.xml

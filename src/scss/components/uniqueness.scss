@@ -3,8 +3,8 @@
   padding-bottom: 64px;
 
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 104px;
+    padding-bottom: 104px;
   }
 }
 
@@ -16,26 +16,14 @@
 .uniqueness-content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  gap: 40px;
+  margin-bottom: 48px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    gap: 64px;
-  }
-}
-
-.uniqueness-text-wrapper {
-  @include media(desktop) {
-    max-width: 640px;
-  }
-}
-
-.uniqueness-title-wrapper {
-  align-items: start;
-
-  @include media(desktop) {
+    align-items: start;
+    margin-bottom: 64px;
   }
 }
 
@@ -44,68 +32,54 @@
   }
 }
 
-.uniqueness-list-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+.uniqueness-top-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #212222;
+
+  @include media(desktop) {
+    font-size: 28px;
+    max-width: 636px;
+  }
+}
+
+.uniqueness-text-wrapper {
+  @include media(desktop) {
+    max-width: 636px;
+  }
+}
+
+.uniqueness-middle-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
-  color: #5c5c5c;
-  margin-bottom: 16px;
+  color: #6d6a63;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
-.uniqueness-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-  }
-}
-
-.uniqueness-list-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  @include media(desktop) {
-  }
-}
-
-.uniqueness-icon {
-  min-width: 20px;
-}
-
-.uniqueness-item-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+.uniqueness-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 1.4;
-  color: #5c5c5c;
+  color: #6d6a63;
 
   @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.uniqueness-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.4;
-  color: #5c5c5c;
-
-  @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .uniqueness-img {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
-    min-width: 608px;
   }
 }

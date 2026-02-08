@@ -1,11 +1,10 @@
 .about-section {
-  background: #f5ecec;
   padding-top: 80px;
   padding-bottom: 64px;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 144px;
+    padding-bottom: 104px;
   }
 }
 
@@ -14,13 +13,41 @@
   }
 }
 
-.about-title-wrapper {
+.about-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 40px;
   }
 }
 
-.line-icon {
+.about-img1 {
   @include media(desktop) {
+    min-width: 416px;
+  }
+}
+
+.about-img2 {
+  @include media(desktop) {
+    min-width: 304px;
+  }
+}
+
+.about-img3 {
+  @include media(desktop) {
+    min-width: 416px;
+  }
+}
+
+.about-top-text-wrapper {
+  @include media(desktop) {
+    max-width: 632px;
   }
 }
 
@@ -30,56 +57,48 @@
 }
 
 .about-top-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
-  color: #5c5c5c;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.about-subtitle {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.4;
-  text-transform: uppercase;
-  text-align: center;
-  color: #333;
-  margin-bottom: 16px;
+  color: #212222;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 
-.about-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
-  color: #5c5c5c;
-  margin-bottom: 24px;
+.about-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
-    font-size: 20px;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 56px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
   }
 }
 
-.about-img {
-  margin-left: auto;
-  margin-right: auto;
+.about-bottom-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
+    max-width: 512px;
+  }
+}
+
+.about-bottom-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #6d6a63;
+
+  @include media(desktop) {
+    font-size: 24px;
   }
 }
